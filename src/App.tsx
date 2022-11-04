@@ -35,7 +35,6 @@ function App() {
           hourlyData={weatherData?.hourly}
           currentTime={weatherData?.time}
         />
-        <div>{weatherData?.hourly.apparent_temperature.slice(0, 24)}</div>
       </header>
     </div>
   );

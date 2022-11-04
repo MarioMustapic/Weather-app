@@ -1,6 +1,12 @@
 .column{
     background-color: grey;
-    border-radius: 2vw;
-    height: 28vh;
-    width: 5vw;
+    border-radius: 30px;
+    height: 25vh;
+    width: 75px;
+    flex-shrink: 0;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
