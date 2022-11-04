@@ -1,7 +1,7 @@
 import "./Column.styles.scss";
 
-type Props = {};
+type Props = { [index: number | string]: number | string | any[] | any };
 
 export const Column = (props: Props): JSX.Element => {
-  return <div className="column"></div>;
+  return <div className="column">{props.hourlyData}</div>;
 };
