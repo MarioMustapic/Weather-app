@@ -1,16 +1,18 @@
-.column{
-    border-radius: 30px;
-    height: 25vh;
-    width: 12vw;
-    max-width: 75px;
-    flex-shrink: 0;
-    margin: 2px;
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
+.column {
+  border-radius: 30px;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
-.currentWeather{
-    width: auto;
-    min-width: 50vw;
+.currentWeather.column {
+  height: 48vh;
+  width: auto;
+}
+.next24h.column {
+  height: 35vh;
+  width: 12vw;
+  flex-shrink: 0;
+  max-width: 75px;
 }
