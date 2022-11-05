@@ -24,18 +24,26 @@ function App() {
         }))
       );
   }, []);
-  // weatherData
-  //   ? console.log(weatherData, weatherData?.hourly.apparent_temperature)
-  //   : console.log("2");
-  // console.log(weatherData?.time);
+  // weatherData ? console.log(weatherData) : console.log("2");
   return (
     <div className="App">
       <header className="App-header">
         <Card
+          className={"currentWeather"}
+          hourlyData={weatherData?.hourly}
+          currentTime={weatherData?.time}
+        />
+        <Card
+          className={"next24h"}
           hourlyData={weatherData?.hourly}
           currentTime={weatherData?.time}
         />
       </header>
+      <div>
+        <a href="https://icons8.com" target="blank">
+          icons by icons8{" "}
+        </a>
+      </div>
     </div>
   );
 }

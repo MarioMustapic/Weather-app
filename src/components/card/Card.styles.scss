@@ -1,9 +1,18 @@
 .card{
-    background-color: greenyellow;
     border-radius: 2vw;
     height: 30vh;
     width: 95vw;
     display: flex;
     flex-direction: row;
     overflow: auto;
+    margin: 3px;
+}
+.currentWeather {
+    background-color: greenyellow;
+    height: 60vh;
+    font-size: calc(10px + 4vmin);
+}
+.next24h{
+    background-color: green;
+
 }

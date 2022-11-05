@@ -1,12 +1,16 @@
 .column{
-    background-color: grey;
     border-radius: 30px;
     height: 25vh;
-    width: 75px;
+    width: 12vw;
+    max-width: 75px;
     flex-shrink: 0;
     margin: 2px;
     padding: 2px;
     display: flex;
     flex-direction: column;
     overflow: auto;
+}
+.currentWeather{
+    width: auto;
+    min-width: 50vw;
 }

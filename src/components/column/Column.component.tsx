@@ -9,10 +9,10 @@ export const Column = (props: Props): JSX.Element => {
   //   <Row key={rowData.hour} rowData={rowData} />
   // ));
   return (
-    <div className="column">
-      <p>{props.hourlyData.hour}</p>
-      <p>{props.hourlyData.temperature}</p>
-      <p>{props.hourlyData.precipitation}</p>
+    <div className={"column " + props.className}>
+      <p>{props.hourlyData.hour}:00</p>
+      <p>{props.hourlyData.temperature}&#8451;</p>
+      <p>{props.hourlyData.precipitation} mm</p>
       <p>{props.hourlyData.clouds}</p>
     </div>
   );
