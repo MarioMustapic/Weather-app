@@ -10,8 +10,13 @@
   height: 50vh;
   font-size: calc(10px + 4vmin);
 }
-.next24h.card {
+.next24h.card,
+.next7d.card {
   background-color: green;
   display: flex;
   flex-direction: row;
+}
+.next7d.card {
+  align-items: center;
+  justify-content: center;
 }

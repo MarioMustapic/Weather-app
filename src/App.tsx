@@ -38,6 +38,11 @@ function App() {
           hourlyData={weatherData?.hourly}
           currentTime={weatherData?.time}
         />
+        <Card
+          className={"next7d"}
+          dailyData={weatherData?.daily}
+          currentTime={weatherData?.time}
+        />
       </header>
       <div>
         <a href="https://icons8.com" target="blank">
