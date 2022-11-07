@@ -11,6 +11,7 @@ export const Column = (props: Props): JSX.Element => {
   if (66 < cloudCover) clouds = clouds100;
   if (33 <= cloudCover && cloudCover <= 66) clouds = clouds50;
   if (cloudCover < 33) clouds = clouds0;
+  if (0 < 33) console.log("lol");
 
   // console.log(props?.columnData);
   // let columnData = [props?.columnData];
@@ -19,10 +20,10 @@ export const Column = (props: Props): JSX.Element => {
   // ));
   return (
     <div className={"column " + props.className}>
-      <p>{props.columnData.hour || props.columnData.day}:00</p>
+      <p>{props.columnData.day || props.columnData.hour + ":00"}</p>
       <p>{props.columnData.temperature}&#8451;</p>
       <p>{props.columnData.precipitation} mm</p>
-      {props.columnData.clouds && (
+      {props.columnData.clouds + 1 && (
         <p>
           {props.columnData.clouds} <img src={clouds} alt="clouds" />
         </p>

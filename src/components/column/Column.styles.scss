@@ -1,21 +1,23 @@
+p {
+  margin: 2px;
+}
 .column {
   border-radius: 30px;
-  margin: 2px;
   padding: 2px;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
 .currentWeather.column {
-  height: 48vh;
   width: auto;
 }
 .next24h.column {
-  height: 35vh;
   width: 12vw;
   flex-shrink: 0;
   max-width: 75px;
 }
 .next7d.column {
-  width: 20vw;
+  min-width: 12vw;
+  flex-direction: row;
 }
