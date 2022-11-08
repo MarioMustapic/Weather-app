@@ -54,7 +54,6 @@ export const Card = (props: Props): JSX.Element => {
       column.push({
         day,
         temperature: temperature,
-        // clouds,
         precipitation,
         weatherCode,
       });

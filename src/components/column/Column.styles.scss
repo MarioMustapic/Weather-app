@@ -21,3 +21,11 @@ p {
   min-width: 12vw;
   flex-direction: row;
 }
+.LazyLoad {
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}

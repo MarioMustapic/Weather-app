@@ -28,16 +28,16 @@ function App() {
         latitude: pos.coords.latitude,
         longitude: pos.coords.longitude,
       }));
-      console.log(pos.coords);
-      if (
-        position?.latitude !== undefined &&
-        position.longitude !== undefined
-      ) {
-        console.log("Your current position is:");
-        console.log(`Latitude : ${position?.latitude}`);
-        console.log(`Longitude: ${position?.longitude}`);
-        console.log(`More or less ${position?.accuracy} meters.`);
-      }
+      // console.log(pos.coords);
+      // if (
+      //   position?.latitude !== undefined &&
+      //   position.longitude !== undefined
+      // ) {
+      //   console.log("Your current position is:");
+      //   console.log(`Latitude : ${position?.latitude}`);
+      //   console.log(`Longitude: ${position?.longitude}`);
+      //   console.log(`More or less ${position?.accuracy} meters.`);
+      // }
     }
     function error(err: any) {
       console.warn(`ERROR(${err.code}): ${err.message}`);
