@@ -7,6 +7,7 @@ type Props = {
   dailyData?: { [index: number | string]: number[] };
   className: string;
 };
+
 export const Card = (props: Props): JSX.Element => {
   // console.log(props.className, props?.hourlyData, props?.dailyData);
 
@@ -64,7 +65,7 @@ export const Card = (props: Props): JSX.Element => {
   const columns = column?.map((column: any) => (
     <Column
       className={props.className}
-      key={column.hour || column.day}
+      key={column?.hour || column?.day}
       columnData={column}
     />
   ));

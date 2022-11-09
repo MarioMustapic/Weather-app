@@ -145,9 +145,9 @@ export const Column = (props: Props): JSX.Element => {
       <p>{props.columnData.temperature}&#8451;</p>
       <p>{props.columnData.precipitation} mm</p>
       {props.columnData.clouds !== undefined && (
-        <div>
-          {props.columnData.clouds}
-          <LazyLoad>
+        <div className="clouds">
+          Clouds {props.columnData.clouds}%
+          <LazyLoad width={20}>
             <img
               src={require(`../../assets/images/icons8-${clouds}.png`)}
               alt="clouds"
@@ -155,14 +155,14 @@ export const Column = (props: Props): JSX.Element => {
           </LazyLoad>
         </div>
       )}
-      <div>
-        {props.columnData.weatherCode}
+      <div className="weatherCode">
         <LazyLoad>
           <img
             src={require(`../../assets/images/icons8-${weatherCode}.png`)}
             alt={weatherCodeAlt}
           />
         </LazyLoad>
+        {weatherCodeAlt}
       </div>
     </div>
   );

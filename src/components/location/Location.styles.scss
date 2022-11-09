@@ -1,0 +1,13 @@
+.location {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 20vw;
+  min-width: 150px;
+  height: 10vh;
+  max-height: 50px;
+}
+.location :hover {
+  background-color: #4444;
+  border-radius: 2vh;
+}
