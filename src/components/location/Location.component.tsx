@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SearchPlaces } from "../searchPlaces/SearchPlaces.component";
 import "./Location.styles.scss";
 
 type Props = {
@@ -44,20 +45,14 @@ export const Location = (props: Props): JSX.Element => {
     navigator.geolocation.getCurrentPosition(success, error, options);
   }, [state?.latitude, state?.longitude, state?.accuracy]);
 
-  //   useEffect(() => {
-  //     if()
-  //     props.setLocation(() => ({
-  //       accuracy: state?.accuracy,
-  //       latitude: state?.latitude,
-  //       longitude: state?.longitude,
-  //     }));
-  //   }, [state?.latitude, state?.longitude, state?.accuracy, props]);
-
   return (
     <div className={props.className}>
       <h2>
         Location <br /> {props.location.name}
       </h2>
+      <div>
+        <SearchPlaces />
+      </div>
       <form></form>
     </div>
   );
