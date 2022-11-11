@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Weather app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project is made as training in React and TS.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+[**Try me on Netlify**](https://weather-app-mario-mustapic.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/41eb72ce-09e8-4085-a8a1-daa39818fac7/deploy-status)](https://app.netlify.com/sites/weather-app-mario-mustapic/deploys)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Technologies**
 
-### `npm test`
+-TypeScript
+-React
+-SCSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Requirements**
+
+- Node.js 16.18.0+
+- npm 8.19.2+
+
+**First steps**
+
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm start`
+
+## Scripts
+
+### `npm run start`
+
+Start the development environment.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build the project for production.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] Gets your current position using geolocation (asking for permission to use your location)
+- [x] Use cords to send API req from https://api.open-meteo.com
+- [x] Show received weather data in cards : current, next 24h and next 7 days
 
-### `npm run eject`
+## Roadmap
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ ] Finalize autocomplete city searchbar to set location manually :
+  - [x] Get API key from google maps and set component to handle that task
+  - [] Setup database to store that key and server to use when it receives req for weather data, send req to google map API and then forward data to client
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[ ] Add some graphs etc to show more data
+[ ] Make it possible to select from more than one weather API
+[ ] Make graph comparing same data from different API-s, or calculate average using data from multiple ones
+...
