@@ -53,7 +53,6 @@ export const Location = (props: Props): JSX.Element => {
       <div>
         <SearchPlaces />
       </div>
-      <form></form>
     </div>
   );
 };

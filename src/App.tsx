@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Card } from "./components/card/Card.component";
 import { Location } from "./components/location/Location.component";
+import { SelectAPI } from "./components/selectAPI/SelectAPI.component";
 
 function App() {
   interface stateData {
@@ -47,6 +48,7 @@ function App() {
         location={location}
         setLocation={setLocation}
       />
+      <SelectAPI className={"selectAPI"} />
       <header className="App-header">
         <Card
           className={"currentWeather"}
@@ -64,7 +66,7 @@ function App() {
           currentTime={weatherData?.time}
         />
       </header>
-      <div>
+      <div className="icons8">
         <a href="https://icons8.com" target="blank">
           icons by icons8{" "}
         </a>
