@@ -51,6 +51,7 @@ function App() {
         );
   }, [location?.latitude, location?.longitude, selectedAPI?.URL]);
   weatherData ? console.log(weatherData) : console.log("2");
+
   return (
     <div className="App">
       {" "}

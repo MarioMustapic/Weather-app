@@ -144,7 +144,7 @@ export const Column = (props: Props): JSX.Element => {
       <p className="notranslate">
         {props.columnData.day || props.columnData.hour + ":00"}
       </p>
-      <p>{props.columnData.temperature}&#8451;</p>
+      <p id="temperature">{props.columnData.temperature}&#8451;</p>
       <p>{props.columnData.precipitation} mm</p>
       {props.columnData.clouds !== undefined && (
         <div className="clouds">
